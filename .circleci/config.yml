@@ -4,5 +4,6 @@ jobs:
     docker:
       - image: timmyers/circleci-vagrant
     steps:
+      - run: export MOLECULE_DEBUG=true
       - checkout
       - run: molecule test
