@@ -6,5 +6,7 @@ RUN \
     vagrant \
     python \
     python-pip && \
-  pip install molecule && \
+  pip install \
+    molecule \
+    python-vagrant && \
   rm -rf /var/lib/apt/lists/*
