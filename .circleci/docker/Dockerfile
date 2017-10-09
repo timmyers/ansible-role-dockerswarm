@@ -6,7 +6,11 @@ RUN \
     vagrant \
     python \
     python-pip && \
-  pip install \
-    molecule \
-    python-vagrant && \
   rm -rf /var/lib/apt/lists/*
+
+RUN \
+  pip install \
+  molecule \
+  python-vagrant
+
+RUN vagrant box add ubuntu/xenial64
