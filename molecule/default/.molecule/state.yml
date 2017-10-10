@@ -2,6 +2,6 @@
 
 ---
 converged: false
-created: false
-driver: null
-prepared: null
+created: true
+driver: vagrant
+prepared: true
