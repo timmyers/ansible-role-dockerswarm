@@ -5,4 +5,5 @@ jobs:
       - image: timmyers/circleci-vagrant
     steps:
       - checkout
+      - run: vagrant init
       - run: molecule --debug test
